@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!-- part 1 -->
+    <!-- <div id="root">
+        <h1>Hello World</h1>
+    </div> -->
+
+
+    <!-- part 2 -->
+    <!-- <div id="root"></div>
+    <script>
+        const h1=document.createElement("h1")
+        h1.innerHTML="Hello World"
+        document.querySelector("#root").append(h1)
+    </script> -->
+
+    <!-- part 3 -->
+    <h1>TAG before root tag</h1>  
+    <!-- we can also do this and it will not replace with anything -->
+    <div id="root"> 
+        <h1>GOurav Sarkar is here</h1>  
+        <!-- if we write somthing like this it will not print it in the browser(if we use render()method) it will "replace" with those tags which are in the .render() method -->
+
+        <!-- react is called as a library because we can use it a specific part/small portion of project like here we are using react only into the root div -->
+    </div>
+    <h1>TAG After root tag</h1>
+
+
+
+    <!-- this one for core react.  beacuse all (web,app etc) usning this core part   -->  
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+
+    <!-- this one for react dom .  it is for web app for app we use (react-native or somthing)-->
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- we have to write all the react insertion code before those file where we use react -->
+
+    <script src="./App.js"></script>
+</body>
+</html>
